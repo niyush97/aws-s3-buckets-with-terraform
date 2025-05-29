@@ -36,13 +36,13 @@ Detailed Guide Here :
 ├── newfile.txt
 └── README.md
 
-##🔐 Access Control & Lifecycle Management
+## 🔐 Access Control & Lifecycle Management
 	•	Public Access: Configure using aws_s3_bucket_public_access_block to restrict public access.
 	•	Lifecycle Rules: Use aws_s3_bucket_lifecycle_configuration to automate object transitions and expirations.
 
 ⸻
 
-##🧹 Cleanup
+## 🧹 Cleanup
 
 To destroy all resources created by this configuration:
 
