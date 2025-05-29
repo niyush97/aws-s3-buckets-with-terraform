@@ -37,10 +37,10 @@ Detailed Guide Here :
 └── README.md
 
 ## 🔐 Access Control & Lifecycle Management
-	•	Public Access: Configure using aws_s3_bucket_public_access_block to restrict public access.
-	•	Lifecycle Rules: Use aws_s3_bucket_lifecycle_configuration to automate object transitions and expirations.
+•	Public Access: Configure using aws_s3_bucket_public_access_block to restrict public access.
+•	Lifecycle Rules: Use aws_s3_bucket_lifecycle_configuration to automate object transitions and expirations.
 
-⸻
+---
 
 ## 🧹 Cleanup
 
