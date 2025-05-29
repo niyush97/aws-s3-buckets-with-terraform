@@ -1,31 +1,52 @@
-# s3-buckets-with-terraform
+# 📦 Managing AWS S3 Buckets & Files with Terraform
 
-Beginner Level Project to Create a S3 Buckets and upload files with Terraform
+This project demonstrates how to use Terraform to create and manage AWS S3 buckets, upload files, and configure essential settings like access control and lifecycle rules.
 
-## Installing Terraform
+---
 
+Detailed Guide Here : https://www.notion.so/Managing-S3-Buckets-Files-with-Terraform-1fcce17158148087a3d6e794dd025243?pvs=4
 
-### Via HomeBrew
-- Make sure you have homebrew installed, then use the following commands.
+## 🚀 Features
+
+- ✅ Create S3 buckets with custom configurations
+- ✅ Upload files to S3 using `aws_s3_object`
+- ✅ Manage public access settings
+- ✅ Configure lifecycle rules for automatic transitions and deletions
+
+---
+
+## 🛠️ Prerequisites
+
+- [Terraform](https://developer.hashicorp.com/terraform/downloads)
+- [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html) configured with your credentials
+- An AWS account with necessary permissions
+
+---
+
+## 📂 Project Structure
+.
+├── main.tf
+├── provider.tf
+├── mulitpleFile.tf
+├── upload.tf
+├── file1.txt
+├── file2.txt
+├── file3.txt
+├── newfile.txt
+└── README.md
+
+🔐 Access Control & Lifecycle Management
+	•	Public Access: Configure using aws_s3_bucket_public_access_block to restrict public access.
+	•	Lifecycle Rules: Use aws_s3_bucket_lifecycle_configuration to automate object transitions and expirations.
+
+⸻
+
+🧹 Cleanup
+
+To destroy all resources created by this configuration:
+
 ```
-brew tap hashicorp/tap
-brew install hashicorp/tap/terraform
+terraform destroy
 ```
-
-### Via ARM64 or AMD64 
-(The following commands are for MacOS Apple silicon chip)
-```
-uname -m
-#Download the file arm64 or amd64 or use the below command.
-curl -LO https://releases.hashicorp.com/terraform/1.12.1/terraform_1.12.1_darwin_arm64.zip
-(curl -LO https://releases.hashicorp.com/terraform/<version>/terraform_<version>_<OS>_<arch>.zip)
-cd Downloads && ls
-unzip terraform_1.12.1_darwin_arm64.zip 
-sudo mv terraform/usr/local/bin/
-Enter password
-terrafrom --version
-Terraform [version] on darwin arm64
-```
-
 
 
