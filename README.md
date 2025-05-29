@@ -4,7 +4,8 @@ This project demonstrates how to use Terraform to create and manage AWS S3 bucke
 
 ---
 
-Detailed Guide Here : https://www.notion.so/Managing-S3-Buckets-Files-with-Terraform-1fcce17158148087a3d6e794dd025243?pvs=4
+Detailed Guide Here :
+[Notion Page](https://www.notion.so/Managing-S3-Buckets-Files-with-Terraform-1fcce17158148087a3d6e794dd025243?pvs=4)
 
 ## 🚀 Features
 
